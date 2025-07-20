@@ -1,0 +1,121 @@
+body {
+  margin: 0; 
+  padding: 0;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
+  color: #222;
+  font-size: 18px;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+.container {
+  max-width: 650px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  color: #2a6ebb;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.5rem;  
+}
+#question-container p {
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+}
+.answers {
+  margin-bottom: 2rem;
+}
+.answer-option {
+  display: block;
+  margin-bottom: 14px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 500;
+  user-select: none;
+}
+.answer-option input {
+  margin-right: 16px;
+  cursor: pointer;
+  transform: scale(1.3);
+}
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  background-color: #2a6ebb;
+  border: none;
+  color: white;
+  padding: 0.8rem 1.8rem;
+  border-radius: 7px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button:disabled {
+  background-color: #999;
+  cursor: default;
+}
+button:hover:not(:disabled) {
+  background-color: #1f4f8b;
+}
+#result {
+  margin-top: 2.5rem;
+  padding: 1.5rem 2rem;
+  border-left: 6px solid #2a6ebb;
+  background-color: #e9f0fb;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-radius: 6px;
+}
+#toggleThemeBtn {
+  float: right;
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 7px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  user-select: none;
+}
+
+#toggleThemeBtn:hover {
+  background-color: #333;
+}body.dark-theme {
+  background-color: #000000;
+  color: #cccccc;
+}body.dark-theme .container {
+  background-color: #222222;
+  color: #cccccc;
+  box-shadow: 0 3px 20px rgba(255, 255, 255, 0.1);
+}body.dark-theme button {
+  background-color: #333333;
+  color: #dddddd;
+  border: none;
+}body.dark-theme button:disabled {
+  background-color: #555555;
+  color: #999999;
+}body.dark-theme button:hover:not(:disabled) {
+  background-color: #555555;
+}body.dark-theme #result {
+  background-color: #333333;
+  border-left-color: #66bb6a;
+  color: #cccccc;
+}body.dark-theme .answer-option {
+  color: #cccccc;
+}body.dark-theme #toggleThemeBtn {
+  background-color: #666666;
+}body.dark-theme #toggleThemeBtn:hover {
+  background-color: #444444;
+}
+
