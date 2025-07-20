@@ -1,2 +1,2 @@
 # otizm-testi
-https://senanto.github.io/otizm-testi
+[click](https://otizm-testi.vercel.app/)
